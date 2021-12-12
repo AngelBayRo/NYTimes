@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeFilterViewController" customModule="NYTimes" customModuleProvider="target">
+            <connections>
+                <outlet property="searchButton" destination="Jld-1w-Ra5" id="dBl-9Z-SRX"/>
+                <outlet property="timeSelector" destination="lTC-Ma-DGQ" id="l5D-Gv-29J"/>
+                <outlet property="typeSelector" destination="tOm-Xe-ZQJ" id="nyL-Bm-h5Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Artículo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dJ-3e-kUH">
+                    <rect key="frame" x="30" y="104" width="354" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tOm-Xe-ZQJ">
+                    <rect key="frame" x="30" y="154.5" width="354" height="32"/>
+                    <color key="backgroundColor" red="0.34117650989999998" green="0.64313727620000005" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <segments>
+                        <segment title="Most Mailed"/>
+                        <segment title="Most Shared"/>
+                        <segment title="Most Viewed"/>
+                    </segments>
+                    <color key="tintColor" systemColor="labelColor"/>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Período de tiempo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5R-h4-8Ez">
+                    <rect key="frame" x="30" y="201.5" width="354" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lTC-Ma-DGQ">
+                    <rect key="frame" x="30" y="252.5" width="354" height="32"/>
+                    <color key="backgroundColor" red="0.34117650989999998" green="0.64313727620000005" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <segments>
+                        <segment title="1 día"/>
+                        <segment title="7 días"/>
+                        <segment title="30 días"/>
+                    </segments>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jld-1w-Ra5">
+                    <rect key="frame" x="30" y="762" width="354" height="60"/>
+                    <color key="backgroundColor" red="0.58039218189999997" green="0.78039217000000005" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="hSO-5n-eY9"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Buscar">
+                        <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="searchAction:" destination="-1" eventType="touchUpInside" id="fys-Kg-uKf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.18830810093882946" blue="0.36262678731348097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jld-1w-Ra5" firstAttribute="centerX" secondItem="F5R-h4-8Ez" secondAttribute="centerX" id="2ma-yn-oAF"/>
+                <constraint firstItem="5dJ-3e-kUH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="5XG-sA-fhi"/>
+                <constraint firstItem="tOm-Xe-ZQJ" firstAttribute="top" secondItem="5dJ-3e-kUH" secondAttribute="bottom" constant="30" id="9vY-6w-HdK"/>
+                <constraint firstItem="lTC-Ma-DGQ" firstAttribute="leading" secondItem="tOm-Xe-ZQJ" secondAttribute="leading" id="DZF-6p-mI1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Jld-1w-Ra5" secondAttribute="bottom" constant="40" id="Daj-ed-i2b"/>
+                <constraint firstItem="5dJ-3e-kUH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JM0-m2-HkL"/>
+                <constraint firstItem="lTC-Ma-DGQ" firstAttribute="top" secondItem="F5R-h4-8Ez" secondAttribute="bottom" constant="30" id="RfJ-lT-p7h"/>
+                <constraint firstItem="F5R-h4-8Ez" firstAttribute="top" secondItem="tOm-Xe-ZQJ" secondAttribute="bottom" constant="16" id="Su9-cb-fv2"/>
+                <constraint firstItem="Jld-1w-Ra5" firstAttribute="leading" secondItem="F5R-h4-8Ez" secondAttribute="leading" id="VZy-fZ-Ey7"/>
+                <constraint firstItem="lTC-Ma-DGQ" firstAttribute="centerX" secondItem="tOm-Xe-ZQJ" secondAttribute="centerX" id="ivg-oV-cMr"/>
+                <constraint firstItem="tOm-Xe-ZQJ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="m4m-4K-c9m"/>
+                <constraint firstItem="tOm-Xe-ZQJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="ptb-XW-0hC"/>
+                <constraint firstItem="F5R-h4-8Ez" firstAttribute="leading" secondItem="5dJ-3e-kUH" secondAttribute="leading" id="uqa-sI-rJ6"/>
+                <constraint firstItem="5dJ-3e-kUH" firstAttribute="leading" secondItem="tOm-Xe-ZQJ" secondAttribute="leading" id="vil-Be-VX5"/>
+                <constraint firstItem="F5R-h4-8Ez" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xTT-Vo-8fP"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="144"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

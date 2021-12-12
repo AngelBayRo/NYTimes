@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TableNewsTableViewCell" customModule="NYTimes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI2-Yk-YJh">
+                        <rect key="frame" x="16" y="6" width="288" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ui0-SO-sQc">
+                        <rect key="frame" x="100" y="29" width="120" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="UXn-Yz-QNV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SectionSectionSectionSection" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGV-sk-irW">
+                        <rect key="frame" x="106" y="37" width="108" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="TitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdb-08-7gG">
+                        <rect key="frame" x="16" y="137" width="288" height="36.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-7Y-uvm">
+                        <rect key="frame" x="16" y="177.5" width="288" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="XWP-7Y-uvm" firstAttribute="top" secondItem="Pdb-08-7gG" secondAttribute="bottom" constant="4" id="5ND-AA-hDx"/>
+                    <constraint firstItem="Pdb-08-7gG" firstAttribute="top" secondItem="Ui0-SO-sQc" secondAttribute="bottom" constant="8" id="6xZ-VQ-rx6"/>
+                    <constraint firstItem="Ui0-SO-sQc" firstAttribute="top" secondItem="pI2-Yk-YJh" secondAttribute="bottom" constant="6" id="BEd-w6-p46"/>
+                    <constraint firstItem="Ui0-SO-sQc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="ER9-cx-uou"/>
+                    <constraint firstItem="Pdb-08-7gG" firstAttribute="leading" secondItem="pI2-Yk-YJh" secondAttribute="leading" id="Gnu-NP-mgC"/>
+                    <constraint firstItem="Pdb-08-7gG" firstAttribute="centerX" secondItem="aGV-sk-irW" secondAttribute="centerX" id="I3E-Fe-wQd"/>
+                    <constraint firstAttribute="bottom" secondItem="XWP-7Y-uvm" secondAttribute="bottom" constant="8" id="Soh-Fr-Whu"/>
+                    <constraint firstItem="pI2-Yk-YJh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="VAs-c0-0jJ"/>
+                    <constraint firstItem="pI2-Yk-YJh" firstAttribute="centerX" secondItem="aGV-sk-irW" secondAttribute="centerX" id="X4d-bI-rtQ"/>
+                    <constraint firstItem="aGV-sk-irW" firstAttribute="top" secondItem="Ui0-SO-sQc" secondAttribute="top" constant="8" id="Yyw-zP-eVh"/>
+                    <constraint firstItem="Ui0-SO-sQc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aLo-7m-uld"/>
+                    <constraint firstItem="XWP-7Y-uvm" firstAttribute="leading" secondItem="Pdb-08-7gG" secondAttribute="leading" id="aiB-DO-GLd"/>
+                    <constraint firstItem="aGV-sk-irW" firstAttribute="leading" secondItem="Ui0-SO-sQc" secondAttribute="leading" constant="6" id="tNe-sy-Yqe"/>
+                    <constraint firstItem="XWP-7Y-uvm" firstAttribute="centerX" secondItem="Pdb-08-7gG" secondAttribute="centerX" id="ufJ-oH-grF"/>
+                    <constraint firstItem="pI2-Yk-YJh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vHV-wf-fZ1"/>
+                    <constraint firstItem="aGV-sk-irW" firstAttribute="trailing" secondItem="Ui0-SO-sQc" secondAttribute="trailing" constant="-6" id="zHL-7k-8c6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="authorLabel" destination="XWP-7Y-uvm" id="zha-c8-mq7"/>
+                <outlet property="dateLabel" destination="pI2-Yk-YJh" id="4jD-lz-pr5"/>
+                <outlet property="imageNews" destination="Ui0-SO-sQc" id="ngu-x6-meK"/>
+                <outlet property="sectionLabel" destination="aGV-sk-irW" id="aoi-HL-0vb"/>
+                <outlet property="titleLabel" destination="Pdb-08-7gG" id="cag-bT-uu6"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="144"/>
+        </tableViewCell>
+    </objects>
+</document>
